@@ -1,0 +1,228 @@
+*{
+    font-family: "Lora", serif;
+    margin: 0;
+    padding: 0;
+} 
+    
+    body {
+    background-image: url(pexels-834934396-20899958.jpg); /* Path to your texture image */
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-color: #f2f0ee; /* Fallback color similar to the texture */
+}
+
+.main_box{
+    width: 80%;
+    margin: auto;
+}
+
+.navbar{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+.Lush{
+    font-size: 50px;
+    color: #C0392B;
+}
+
+.Berry{
+    font-size: 50px;
+    color:#6B8E23;
+}
+
+.nav_list{
+    flex: 1;
+    text-align: right;
+}
+
+.nav_list li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+    
+}
+
+.nav_list li a{
+    text-decoration: none;
+    color:#6B8E23;
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background-color:#C0392B; 
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: -52px;
+   transition: 0.5s;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+.navbar_icons a i{
+    color:#6B8E23;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.navbar_icons{
+    margin-left: 40px;
+}
+
+.banner{
+    display: flex;
+    margin-top: 80px;
+}
+
+.left_column, .right_column{
+    flex-basis: 50%;
+}
+
+.right_column img{
+    max-height: 450px; /* Adjust height as needed */
+    width: auto;
+    transform: translateX(30%);
+    box-shadow: 0 2px 8px grey;
+}
+
+.search_box{
+    width: 70%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 30px;
+    position: relative;
+    align-items: center;
+   
+}
+
+.search_box i{
+   font-size: 25px;
+   cursor: pointer;
+   color: #cdcbcbee;
+   position: absolute;
+    left: 3px; 
+}
+
+.search_box input{
+    /* margin-left: 15px; */
+    width: 100%;
+    font-size: 20px;
+    padding: 2px 12px 2px 40px;
+    border: 0;
+    outline: none;
+    box-shadow: 0 1px 1px rgb(143, 142, 142);
+    
+} 
+
+.search_box input::placeholder {
+    font-size: 18px;  /* Change font size */
+    color: #999;      /* Change placeholder color */
+    font-style: italic; /* Optional: Make it italic */
+    opacity: 1;       /* Ensure full opacity (default is lower in some browsers) */
+}
+
+.left_column h1{
+    font-size: 80px;
+}
+
+.left_column h3{
+    font-size: 25px;
+}
+
+span{
+    color: #C0392B;
+}
+
+.left_column h1,h3{
+    color:#6B8E23;
+}
+
+.left_column h1{
+    font-weight: 500;
+}
+
+.left_column h3{
+    font-weight: 500;
+}
+
+.left_column p{
+    font-size: 16px;
+    margin: 50px 0;
+    color: #6A8A42;
+}
+
+.bttn button{
+    padding: 7px 30px;
+    outline: none;
+    margin-right: 15px;
+    border: 1px solid #C0392B;
+    cursor: pointer;
+    color: #C0392B;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.bttn .primary_button {
+    background: linear-gradient(#C0392B,  #E74C3C); 
+    box-shadow: 0 2px 15px rgba(192, 57, 43, 0.26); 
+    color: white;
+}
+
+.bttn{
+    margin-bottom: 50px;
+}
+.social_icons {
+    width: 200px;
+    text-align: center;
+    opacity: .4;
+    position: relative;
+    margin-left: 160px;
+}
+
+.social_icons a i{
+    font-size: 24px;
+    margin: 0 14px;
+    color: black;
+}
+
+.social_icons::after{
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: -160px;
+    top: 10px;
+}
+/* .bttn .primary_button{
+    background: linear-gradient(#C0392B, #f14a60);
+    box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+    color: white;
+} */
+
+/* .Berry{
+    font-size: 80px;
+    color:#228B22;
+} */
+/* h1{
+    color:#333333;
+} */
+
+  /* img{
+    height: 400px;
+    width: 400px;
+  } */
